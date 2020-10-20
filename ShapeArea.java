@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner; // This class is used to get an input from the user therefor it is imported
 abstract class Shape{ //Abstract class to be used to print the area of a shape
 protected int a; // Data member that can be used by derived classes
 protected int b; // Data member that can be used by derived classes
@@ -6,13 +6,13 @@ abstract void printArea(); // Method to print the area
 } 
 class Rectangle extends Shape{ // Used to print the area of the rectangle
 Scanner input=new Scanner(System.in); 
-@Override 
+@Override //Override annotation is used
 void printArea() { 
-System.out.println("Enter the length and breadth of the rectangle: "); 
-a=input.nextInt(); 
-b=input.nextInt(); 
-int area=a*b; 
-System.out.println("Area of rectangle with length "+a+" and breadth "+b+" is "+area); 
+System.out.println("Enter the length and breadth of the rectangle: "); // Input prompt
+a=input.nextInt(); // Input for length is read
+b=input.nextInt(); // Input for breadth is read
+int area=a*b; // Area of the rectangle is stored
+System.out.println("Area of rectangle with length "+a+" and breadth "+b+" is "+area); // Area of the rectangle is printed
 } 
 } 
 class Triangle extends Shape{ // Used to print the area of the Triangle
