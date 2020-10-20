@@ -30,13 +30,13 @@ System.out.println("Area of the triangle is "+area); // Printing of area of tria
 } 
 } 
 class Circle extends Shape{ // Used to print the area of the circle
-Scanner input=new Scanner(System.in); 
-@Override 
+Scanner input=new Scanner(System.in); // Scanner class is used and passed an argument System.in to one argument constructor
+@Override // Override annotation is used
 void printArea() { 
-System.out.println("Enter the radius of the circle: "); 
-a= input.nextInt(); 
-double area=3.14*a*a; 
-System.out.println("Area of circle is "+area); 
+System.out.println("Enter the radius of the circle: "); // Input prompt
+a= input.nextInt(); // Getting input for radius
+double area=3.14*a*a; // Calculating area of the circle
+System.out.println("Area of circle is "+area); // Printing area of the circle
 } }
 public class ShapeArea { // This class contains main method from which the program starts
 public static void main(String[] args){ 
