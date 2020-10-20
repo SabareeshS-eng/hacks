@@ -5,7 +5,7 @@ protected int b; // Data member that can be used by derived classes
 abstract void printArea(); // Method to print the area
 } 
 class Rectangle extends Shape{ // Used to print the area of the rectangle
-Scanner input=new Scanner(System.in); 
+Scanner input=new Scanner(System.in); // Scanner class is used and passed an argument System.in to one argument constructor
 @Override //Override annotation is used
 void printArea() { 
 System.out.println("Enter the length and breadth of the rectangle: "); // Input prompt
@@ -16,17 +16,17 @@ System.out.println("Area of rectangle with length "+a+" and breadth "+b+" is "+a
 } 
 } 
 class Triangle extends Shape{ // Used to print the area of the Triangle
-int c; 
-Scanner input=new Scanner(System.in); 
-@Override 
+int c; // Default member data is declared
+Scanner input=new Scanner(System.in); // Scanner class is used and passed an argument System.in to one argument constructor
+@Override // Override annotation is used
 void printArea() { 
-System.out.println("Enter the three sides of the triangle:"); 
-a= input.nextInt(); 
-b= input.nextInt(); 
-c= input.nextInt(); 
-double s=(a+b+c)/2; 
-double area=Math.pow(s*(s-a)*(s-b)*(s-c),0.5); 
-System.out.println("Area of the triangle is "+area); 
+System.out.println("Enter the three sides of the triangle:"); // Input prompt
+a= input.nextInt(); // Input for side a
+b= input.nextInt(); // Input for side b
+c= input.nextInt(); // Input for side c
+double s=(a+b+c)/2; // Calculation of s
+double area=Math.pow(s*(s-a)*(s-b)*(s-c),0.5); // Calculation of area
+System.out.println("Area of the triangle is "+area); // Printing of area of triangle
 } 
 } 
 class Circle extends Shape{ // Used to print the area of the circle
